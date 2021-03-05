@@ -2,7 +2,7 @@
 
 function getTotalBooksCount(books) {
   return books.length;
-}
+} //
 
 function getTotalAccountsCount(accounts) {
   return accounts.length;
@@ -55,7 +55,7 @@ function getMostPopularAuthors(books, authors) {
   });
   return Object.entries(map)
     .map(([name, count]) => {
-      return {name, count}
+      return { name, count };
     })
     .sort((a, b) => b.count - a.count)
     .slice(0, 5);
